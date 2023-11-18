@@ -3,7 +3,7 @@ import SkillIcons from "./SkillIcons/SkillIcons";
 
 const Sectionthree = () => {
   return (
-    <div id='competences' className=' h-screen w-full  '>
+    <div id='competences' className='h-[100vh] w-full  '>
       <div className=''>
         <h2 className='text-6xl font-bold text-white'>Compétences</h2>
       </div>
