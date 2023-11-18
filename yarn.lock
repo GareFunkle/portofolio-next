@@ -3756,6 +3756,11 @@ svgo@^3.0.2:
     csso "5.0.5"
     picocolors "^1.0.0"
 
+tailwind-gradient-mask-image@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tailwind-gradient-mask-image/-/tailwind-gradient-mask-image-1.1.0.tgz#ee6ea2b0fbbd21f1942ebf694bf3d838c67190fe"
+  integrity sha512-sUhik6Srts8XvSpCFEelxF0hRud+eQI1TYgVH2sREtAavP+wEVE65JQCiDj/XBoTwCo+ElVAVNljjpfm2mCkKw==
+
 tailwindcss@^3.3.0:
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.5.tgz#22a59e2fbe0ecb6660809d9cc5f3976b077be3b8"
