@@ -1,9 +1,13 @@
 import React from "react";
+import SkillIcons from "./SkillIcons/SkillIcons";
 
 const Sectionthree = () => {
   return (
-    <div id='section-three' className='h-[100vh] w-full bg-yellow-100'>
-      Sectionthree
+    <div id='competences' className=' h-screen w-full  '>
+      <div className=''>
+        <h2 className='text-6xl font-bold text-white'>Compétences</h2>
+      </div>
+      <SkillIcons />
     </div>
   );
 };
