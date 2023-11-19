@@ -4,9 +4,9 @@ import HomeVideo from "@/components/Sections/SectionHome/HomeVideo/HomeVideo";
 
 const SectionHome = () => {
   return (
-    <div id='#' className=' mb-12 h-screen w-full '>
+    <div id='#' className=' h-screen w-full  '>
       <HomeVideo />
-      <div className='z-2 relative left-1/2  top-1/2 -translate-x-1/2 -translate-y-1/2'>
+      <div className='z-2 relative left-1/2   top-1/2 -translate-x-1/2 -translate-y-1/2'>
         <div className='flex items-center  justify-center'>
           <VDLogo
             width={500}
