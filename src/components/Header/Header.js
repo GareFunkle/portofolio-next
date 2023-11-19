@@ -26,11 +26,11 @@ const Header = () => {
   return (
     <div>
       <div className='fixed bottom-0 left-0 z-40 h-48 w-full backdrop-blur  gradient-mask-t-0'></div>
-      <div className='fixed bottom-8 left-1/2 z-50 w-full  max-w-xl -translate-x-1/2 rounded-lg border border-gray-200 bg-[#151515] p-4 text-white '>
-        <div className=' flex items-center justify-between '>
+      <div className='fixed bottom-8 left-1/2 z-50 h-16  w-full max-w-lg -translate-x-1/2 rounded-lg border border-gray-200 bg-[#151515] text-white '>
+        <div className='relative top-1/2 flex -translate-y-1/2 items-center justify-between p-2 '>
           <Link
             href='#'
-            className=' w-8 p-2 transition-all duration-300 hover:rounded-lg hover:border hover:border-white'
+            className=' w-8 border border-transparent p-2 transition-all  duration-300 hover:rounded-lg hover:border hover:border-white'
           >
             <FontAwesomeIcon icon={faArrowUp} />
           </Link>
@@ -38,7 +38,7 @@ const Header = () => {
             <Link
               href={link.href}
               key={link.item}
-              className=' p-2 transition-all duration-300 hover:rounded-lg hover:border hover:border-white'
+              className=' border border-transparent p-2 transition-all  duration-300 hover:rounded-lg hover:border hover:border-white'
             >
               {link.item}
             </Link>

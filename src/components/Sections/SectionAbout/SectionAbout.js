@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const SectionTwo = () => {
+const SectionAbout = () => {
   return (
     <section id='a-propos' className='h-screen max-w-full '>
-      <div className='sm:w-2-3 relative left-1/2  top-1/2 box-border flex h-auto w-1/2  -translate-x-1/2 -translate-y-1/2 rounded-xl border border-white bg-card-gradient p-12 md:w-2/3 lg:w-2/3  '>
+      <div className='sm:w-2-3 relative left-1/2  top-1/2 box-border flex h-auto w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl  border border-white bg-card-gradient p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-2/3 lg:w-2/3  '>
         <div className='p-4 text-white'>
           <h1 className='mb-4 text-h1 font-bold'>Faisons connaissance </h1>
           <Image
@@ -45,4 +45,4 @@ const SectionTwo = () => {
   );
 };
 
-export default SectionTwo;
+export default SectionAbout;

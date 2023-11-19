@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionFour = () => {
+const SectionExperience = () => {
   return (
     <section id='experiences' className='h-screen w-full '>
       <div className='relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -10,4 +10,4 @@ const SectionFour = () => {
   );
 };
 
-export default SectionFour;
+export default SectionExperience;

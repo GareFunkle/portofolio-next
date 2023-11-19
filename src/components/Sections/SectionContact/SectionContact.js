@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionFive = () => {
+const SectionContact = () => {
   return (
     <div id='contact' className='h-screen w-full '>
       <div className='relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -10,4 +10,4 @@ const SectionFive = () => {
   );
 };
 
-export default SectionFive;
+export default SectionContact;

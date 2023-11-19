@@ -1,19 +1,19 @@
 import Header from "@/components/Header/Header";
-import SectionFive from "@/components/Sections/SectionFive/SectionFive";
-import SectionFour from "@/components/Sections/SectionFour/SectionFour";
-import SectionOne from "@/components/Sections/SectionOne/SectionOne";
-import Sectionthree from "@/components/Sections/SectionThree/Sectionthree";
-import SectionTwo from "@/components/Sections/SectionTwo/SectionTwo";
+import SectionContact from "@/components/Sections/SectionContact/SectionContact";
+import SectionExperience from "@/components/Sections/SectionExperience/SectionExperience";
+import SectionHome from "@/components/Sections/SectionHome/SectionHome";
+import SectionSkills from "@/components/Sections/SectionSkills/SectionSkills";
+import SectionAbout from "@/components/Sections/SectionAbout/SectionAbout";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <SectionOne />
-      <SectionTwo />
-      <Sectionthree />
-      <SectionFour />
-      <SectionFive />
+      <SectionHome />
+      <SectionAbout />
+      <SectionSkills />
+      <SectionExperience />
+      <SectionContact />
     </div>
   );
 };
