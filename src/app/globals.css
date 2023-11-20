@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 body {
+  transition: all 0.5s ease-in-out;
+
   scrollbar-width: thin; /* Largeur de la barre de défilement */
   scrollbar-color: #888 #f1f1f1; /* Couleur de la poignée de défilement et couleur de fond de la piste de défilement */
   /* Pour Firefox */
@@ -27,6 +29,7 @@ body {
 }
 
 html {
+  transition: all 0.5s ease-in-out;
   font-family: "Trispace", sans-serif;
   scroll-behavior: smooth !important;
   background-image: linear-gradient(
@@ -80,3 +83,22 @@ html {
   background: #ffffff62;
   color: #003549;
 } */
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}

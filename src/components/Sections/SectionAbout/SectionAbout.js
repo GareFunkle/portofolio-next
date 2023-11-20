@@ -7,7 +7,7 @@ const SectionAbout = () => {
       id='a-propos'
       className=' flex max-w-full items-center justify-center p-4 '
     >
-      <div className='  box-border  h-auto w-2/3 rounded-xl    border border-white  bg-card-gradient p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-5/6 '>
+      <div className='container  box-border  h-auto w-2/3 rounded-xl    border border-white  bg-card-gradient p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] md:w-5/6 lg:w-2/3 '>
         <div className='p-4 text-white'>
           <h1 className='mb-4 text-h1 font-bold'>Faisons connaissance </h1>
           <Image

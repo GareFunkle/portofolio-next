@@ -30,6 +30,15 @@ module.exports = {
         h2: "calc(1.325rem + 0.9vw)",
         p: "calc(1rem + 0.5vw)",
       },
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [
