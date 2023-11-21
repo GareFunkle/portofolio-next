@@ -7,13 +7,7 @@ const SectionAbout = () => {
       id='a-propos'
       className=' flex max-w-full items-center justify-center p-4 '
     >
-      <div
-        className='hover:shadow-[0_20px_50px_#  lih  03549] container box-border    h-auto w-full  rounded-xl border border-white bg-card-gradient p-12
-        
-        transition-all
-        
-        duration-300 md:w-5/6 lg:w-2/3 '
-      >
+      <div className=' container mx-auto box-border    h-auto w-full  rounded-xl border border-white bg-card-gradient p-4 transition-all duration-300  md:w-5/6 md:p-12 '>
         <div className='p-4 text-white'>
           <h1 className='mb-4 text-h1 font-bold'>Faisons connaissance </h1>
           <Image

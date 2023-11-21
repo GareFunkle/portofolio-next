@@ -13,8 +13,8 @@ const ExperienceSite = (props) => {
     };
   }, []);
   return (
-    <div className='animate-fadeInUp fixed left-1/2 top-1/2 z-50 h-screen w-full -translate-x-1/2 -translate-y-1/2 transform transition-all duration-300'>
-      <div className='h-full w-full overflow-scroll rounded-lg border border-white bg-black p-4'>
+    <div className='fixed left-1/2 top-1/2 z-50 h-screen w-full -translate-x-1/2 -translate-y-1/2 transform animate-fadeInUp transition-all duration-300'>
+      <div className='h-full w-full overflow-scroll rounded-lg border border-white bg-white bg-opacity-20 p-4 backdrop-blur-xl'>
         <div className='absolute right-12 '>
           <FontAwesomeIcon
             className='cursor-pointer rounded-md border border-white bg-black p-2 text-2xl text-red-700 transition-all duration-300 hover:scale-105 active:scale-95'
