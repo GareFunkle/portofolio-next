@@ -84,7 +84,6 @@ html {
   color: #003549;
 } */
 
-
 .fade-enter {
   opacity: 0;
 }
@@ -103,10 +102,8 @@ html {
   transition: opacity 500ms;
 }
 
-
-
 .hover-text-html-5:hover {
-  color: #e34c26
+  color: #e34c26;
 }
 
 .hover-text-css-3:hover {
@@ -118,26 +115,25 @@ html {
 }
 
 .hover-text-vue:hover {
-  color: #41B883;
+  color: #41b883;
 }
-
 
 .hover-text-wordpress:hover {
   color: #00749c;
 }
 
 .hover-text-shopify:hover {
-  color: #96bf48
+  color: #96bf48;
 }
 
 .hover-text-database:hover {
   color: #00758f;
-} 
+}
 
 .hover-text-github:hover {
   color: #171515;
-} 
+}
 
 .hover-text-reddit:hover {
   color: #ff5700;
-} 
+}

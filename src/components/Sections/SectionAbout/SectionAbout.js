@@ -5,16 +5,17 @@ const SectionAbout = () => {
   return (
     <section
       id='a-propos'
-      className=' flex max-w-full items-center justify-center p-4 '
+      className=' flex h-full max-w-full items-center justify-center p-4 '
     >
-      <div className=' container mx-auto box-border    h-auto w-full  rounded-xl border border-white bg-card-gradient p-4 transition-all duration-300  md:w-5/6 md:p-12 '>
+      <div className='  container mx-auto box-border  h-auto max-w-full rounded-xl border border-white bg-card-gradient p-4  backdrop-blur-xl sm:w-full md:w-full md:p-12 lg:w-9/12 '>
         <div className='p-4 text-white'>
           <h1 className='mb-4 text-h1 font-bold'>Faisons connaissance </h1>
+
           <Image
             src='/images/vincent-durret.jpg'
             width={1920}
             height={1080}
-            className=' float-right  h-auto w-full rounded-3xl p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]  sm:w-2/3 md:w-1/2 lg:w-1/2'
+            className=' float-right h-full  w-full rounded-3xl p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]  sm:w-2/3 md:w-1/2 lg:w-1/2'
             alt="Vincent Durret's image"
           />
           <p className='mb-4 text-p '>
