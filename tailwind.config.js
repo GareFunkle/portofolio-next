@@ -15,28 +15,37 @@ module.exports = {
           "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)",
       },
       colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
-        success: "#0070f3",
-        cyan: "#79FFE1",
         "my-color": "#003549",
       },
+
       boxShadow: {
         inner: "inset 0 2px 4px 0 #003549",
       },
       fontSize: {
         h1: "calc(1.375rem + 1.5vw)",
         h2: "calc(1.325rem + 0.9vw)",
-        p: "calc(1rem + 0.5vw)",
+        p: "calc(0.8rem + 0.4vw)",
       },
       animation: {
-        fadeIn: "fadeIn 0.5s ease-in-out",
+        fadeInUp: "fadeIn 0.8s ease-in-out",
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
+          "0%": {
+            opacity: "0",
+            transform: "translateY(100%)",
+            left: "0",
+          },
+          "50%": {
+            opacity: "0.5",
+            transform: "translateY(70%)",
+            left: "0",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+            left: "0",
+          },
         },
       },
     },

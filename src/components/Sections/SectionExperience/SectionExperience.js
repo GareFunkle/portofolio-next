@@ -11,8 +11,7 @@ const SectionExperience = () => {
     { name: "Wordpress" },
     { name: "Shopify" },
     { name: "Vue.js" },
-    { name: "React" },
-    { name: "Next" },
+    { name: "React/Next" },
   ]);
   const items = [
     {
