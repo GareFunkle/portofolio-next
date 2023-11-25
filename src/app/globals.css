@@ -6,6 +6,7 @@
 body {
   transition: all 0.5s ease-in-out;
 
+
   scrollbar-width: thin; /* Largeur de la barre de défilement */
   scrollbar-color: #888 #f1f1f1; /* Couleur de la poignée de défilement et couleur de fond de la piste de défilement */
   /* Pour Firefox */
@@ -26,6 +27,10 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #151515; /* Couleur de la poignée de défilement au survol */
+}
+
+.all-initial {
+  all: initial;
 }
 
 html {
@@ -79,10 +84,7 @@ html {
     linear-gradient(334deg, hsl(247, 0%, 2%), hsl(247, 0%, 2%));
 }
 
-/* .test {
-  background: #ffffff62;
-  color: #003549;
-} */
+
 
 .fade-enter {
   opacity: 0;

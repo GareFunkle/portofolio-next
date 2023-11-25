@@ -13,6 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "card-gradient":
           "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)",
+        "gradient-gotham": "linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99))",
       },
       colors: {
         "my-color": "#003549",
@@ -24,6 +25,7 @@ module.exports = {
       fontSize: {
         h1: "calc(1.375rem + 1.5vw)",
         h2: "calc(1.325rem + 0.9vw)",
+        h3: "calc(1.3rem + 0.6vw)",
         p: "calc(0.8rem + 0.4vw)",
       },
       animation: {

@@ -17,10 +17,10 @@ const SectionHome = () => {
           />
         </div>
         <div className='text-white'>
-          <h1 className='text-center text-h1 font-bold  drop-shadow-[0_0_1px_black]'>
+          <h1 className='text-center text-h1 font-bold  drop-shadow-[0_0_1px_#003549]'>
             Vincent Durret
           </h1>
-          <h2 className='text-center text-h2 font-bold drop-shadow-[0_0_1px_black]'>
+          <h2 className='text-center text-h2 font-bold drop-shadow-[0_0_1px_#003549]'>
             Développeur Web
           </h2>
         </div>

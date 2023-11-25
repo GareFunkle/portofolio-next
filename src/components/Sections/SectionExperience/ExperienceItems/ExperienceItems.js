@@ -52,7 +52,7 @@ const ExperienceItems = (props) => {
           />
 
           <h2 className='mt-4 text-p font-semibold  text-white'>{item.name}</h2>
-          <p className='mt-2 text-lg font-bold uppercase tracking-wider text-my-color '>
+          <p className='mt-2 text-lg font-bold uppercase tracking-wider text-white '>
             {item.categories}
           </p>
         </div>
