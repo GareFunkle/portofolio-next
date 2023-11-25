@@ -19,7 +19,7 @@ const SectionContact = () => {
         </p>
         <Link
           href='mailto:vincent.durret@gmail.com?subject=Site Web '
-          className='text-h3 mb-4 border-b text-white transition-all duration-300 hover:border-b-[#003549]'
+          className='mb-4 border-b text-h3 text-white transition-all duration-300 hover:border-b-[#003549]'
         >
           Envoyer moi un email
         </Link>

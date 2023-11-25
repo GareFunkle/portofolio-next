@@ -25,7 +25,7 @@ const ExperienceSite = (props) => {
           </p>
         </div>
         <div className='mt-24  p-2 md:p-8'>
-          <div className='bg-gradient-gotham mb-4 rounded-lg border border-white p-2 '>
+          <div className='mb-4 rounded-lg border border-white bg-gradient-gotham p-2 '>
             <h2 className='text-center text-h2 text-white'>
               {props.selectedItem.name ? props.selectedItem.name : ""}
             </h2>

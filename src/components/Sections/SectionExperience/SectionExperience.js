@@ -49,7 +49,7 @@ const SectionExperience = () => {
     },
   ];
   return (
-    <section id='experiences' className=' w-full '>
+    <section id='experiences' className=' h-screen w-full '>
       <div className='container mx-auto p-4'>
         <h1 className='text-h1 font-semibold text-white'>Experiences</h1>
 
