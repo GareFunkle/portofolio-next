@@ -7,7 +7,7 @@ const HomeVideo = () => {
       muted
       loop
       id='myVideo'
-      className='absolute z-0 h-5/6 w-full object-cover'
+      className='absolute z-0 h-full w-full object-cover'
     >
       <source src='/videos/background/bg.mp4' type='video/mp4' />
     </video>

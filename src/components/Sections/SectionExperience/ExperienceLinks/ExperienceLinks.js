@@ -1,4 +1,4 @@
-import ButtonPortofolio from "@/components/ui/grid/buttonLinkPortofolio/buttonPortofolio";
+import ButtonPortofolio from "@/components/ui/buttonLinkPortofolio/buttonPortofolio";
 import React from "react";
 
 const ExperienceLinks = (props) => {
