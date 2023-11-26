@@ -86,7 +86,7 @@ const SectionSkills = () => {
                 .map((skill) => (
                   <FontAwesomeIcon
                     key={skill.title}
-                    className={`h-auto w-16 cursor-pointer rounded-md bg-opacity-20 p-4 text-white transition-all duration-300 hover:scale-105 hover:bg-white  hover:bg-opacity-10  hover:backdrop-blur-sm  hover:backdrop-filter active:scale-95 sm:w-16 md:w-24 lg:w-24 hover-text-${skill.title.toLowerCase()}`}
+                    className={`h-auto w-16 cursor-pointer rounded-md bg-opacity-20 p-4 text-white transition-all duration-300 hover:scale-105 hover:bg-white  hover:bg-opacity-10  hover:backdrop-blur-sm  hover:backdrop-filter active:scale-95 sm:w-16 md:w-24 lg:w-20 hover-text-${skill.title.toLowerCase()}`}
                     icon={skill.icons}
                     title={skill.title}
                   />

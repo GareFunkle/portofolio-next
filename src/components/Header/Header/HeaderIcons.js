@@ -1,11 +1,34 @@
+"use client";
+
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+
+const boxVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      duration: 0.9,
+    },
+  },
+};
 
 const HeaderIcons = () => {
   return (
-    <div className='fixed bottom-0 left-12 z-50'>
+    <motion.div
+      variants={boxVariants}
+      initial={"hidden"}
+      animate={"visible"}
+      className='fixed bottom-0 left-12 z-50'
+    >
       <div className='rounded-t-lg bg-white/20 backdrop-blur-lg '>
         <div className='flex flex-col items-center justify-center space-y-6  px-2 pt-2 '>
           <Link
@@ -26,7 +49,7 @@ const HeaderIcons = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

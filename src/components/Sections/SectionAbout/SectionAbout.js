@@ -1,5 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+
+const boxVariants = {
+  hidden: { scale: 0, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 1 } },
+};
 
 const SectionAbout = () => {
   return (
@@ -7,7 +15,13 @@ const SectionAbout = () => {
       id='a-propos'
       className=' flex h-full max-w-full items-center justify-center p-4 '
     >
-      <div className='  container mx-auto box-border  h-auto max-w-full rounded-xl border border-white bg-card-gradient p-4  backdrop-blur-xl sm:w-full md:w-full md:p-12 lg:w-9/12 '>
+      <motion.div
+        variants={boxVariants}
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        className='  container mx-auto box-border  h-auto max-w-full rounded-xl border border-white bg-card-gradient p-4  backdrop-blur-xl sm:w-full md:w-full md:p-12 lg:w-9/12 '
+      >
         <div className='p-4 text-white'>
           <h1 className='mb-4 text-h1 font-bold'>Faisons connaissance </h1>
 
@@ -44,7 +58,7 @@ const SectionAbout = () => {
             développement web.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
