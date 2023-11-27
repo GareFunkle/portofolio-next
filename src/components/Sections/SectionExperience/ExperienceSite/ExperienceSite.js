@@ -11,15 +11,12 @@ import { motion } from "framer-motion";
 const boxVariants = {
   hidden: {
     opacity: 0,
-    y: 0, // déplace le div en dehors de la fenêtre de visualisation
-    x: "-5%",
   },
   visible: {
     opacity: 1,
-    y: "27%", // déplace le div à l'intérieur de la fenêtre de visualisation
-    x: "5%",
+
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -36,9 +33,9 @@ const ExperienceSite = (props) => {
       variants={boxVariants}
       initial={"hidden"}
       animate={"visible"}
-      className='fixed left-0 top-0 z-50 h-5/6 w-11/12'
+      className=' fixed left-1/2 top-[10%] z-50 h-full w-11/12 -translate-x-1/2 '
     >
-      <div className='h-full w-full overflow-scroll  rounded-t-lg border-x border-t border-my-color bg-my-color/10 bg-opacity-20 p-4 backdrop-blur-xl'>
+      <div className='h-full w-full overflow-scroll  rounded-t-lg border-x border-t border-my-color bg-black/30 bg-opacity-20 p-4 backdrop-blur-xl'>
         <div className='absolute right-12 top-16 '>
           <p
             onClick={props.handleClose}
@@ -83,10 +80,10 @@ const ExperienceSite = (props) => {
               rel='noreferrer'
               className='group relative mb-4 inline-block overflow-hidden rounded border border-white/40  px-12 py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white'
             >
-              <span class='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
-              <span class='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
-              <span class='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-300 group-hover:w-full'></span>
-              <span class='ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-300 group-hover:h-full'></span>
+              <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
+              <span className='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
+              <span className='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-300 group-hover:w-full'></span>
+              <span className='ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-300 group-hover:h-full'></span>
               Voir le site
             </ButtonLink>
           </div>

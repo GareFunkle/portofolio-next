@@ -3,8 +3,27 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import ExprerienceSite from "../ExperienceSite/ExperienceSite";
+import AnimateBox from "@/components/ui/animateBox/AnimateBox";
+import { motion } from "framer-motion";
+
+const boxVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const wrapperVariants = {
+  hidden: { opacity: 0, transition: { when: "afterChildren" } },
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+};
 
 const ExperienceItems = (props) => {
+  const Box = motion(AnimateBox);
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleClick = (item) => {
@@ -39,9 +58,15 @@ const ExperienceItems = (props) => {
     filteredImages = orderedImages;
   }
   return (
-    <div className=' grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 '>
+    <motion.div
+      key={filteredImages.length}
+      variants={wrapperVariants}
+      initial={"hidden"}
+      animate={"visible"}
+      className=' grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 '
+    >
       {filteredImages.map((item) => (
-        <div key={item.src}>
+        <Box key={item.src} variants={boxVariants}>
           <Image
             width={1920}
             height={1080}
@@ -55,15 +80,16 @@ const ExperienceItems = (props) => {
           <p className='mt-2 text-lg font-bold uppercase tracking-wider text-white '>
             {item.categories}
           </p>
-        </div>
+        </Box>
       ))}
       {selectedItem && (
         <ExprerienceSite
           handleClose={handleClose}
+          handleClick={handleClick}
           selectedItem={selectedItem}
         />
       )}
-    </div>
+    </motion.div>
   );
 };
 

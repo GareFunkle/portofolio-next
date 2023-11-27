@@ -49,11 +49,11 @@ const SectionExperience = () => {
     },
   ];
   return (
-    <section id='experiences' className=' h-screen w-full '>
-      <div className='container mx-auto p-4'>
-        <h1 className='text-h1 font-semibold text-white'>Experiences</h1>
+    <section id='experiences' className='  h-auto w-full md:h-screen '>
+      <div className='container  mx-auto p-4'>
+        <h1 className='text-h1 font-semibold text-white'>Experiences </h1>
 
-        <div className='mt-8 lg:-mx-12 lg:flex xl:mt-16'>
+        <div className='mt-8  lg:flex xl:mt-16'>
           <ExperienceLinks
             category={categories}
             onCategorySelect={setSelectedCategory}

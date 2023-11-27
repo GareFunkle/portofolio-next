@@ -1,3 +1,4 @@
+import React from "react";
 import {
   faGithub,
   faLinkedin,
@@ -5,11 +6,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import React from "react";
+import LinkButton from "@/components/ui/buttonLink/ButtonLink";
 
 const SectionContact = () => {
   return (
-    <section id='contact' className='h-[90vh] w-full '>
+    <section id='contact' className='h-[70vh] w-full '>
       <div className='flex h-full w-full flex-col items-center justify-center'>
         <h2 className='mb-4 text-h1 font-bold text-white'>Contact</h2>
         <div className='mb-4 h-[1px] w-1/2 bg-gray-400'></div>
@@ -17,16 +18,13 @@ const SectionContact = () => {
           Vous avez une question, une proposition, un projet ou vous voulez
           travailler ensemble sur quelque chose ?
         </p>
-        <Link
+        <LinkButton
           href='mailto:vincent.durret@gmail.com?subject=Site Web '
           className='group relative mb-4 inline-block overflow-hidden rounded border border-white/40  px-12 py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white'
         >
-          <span class='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
-          <span class='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
-          <span class='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-300 group-hover:w-full'></span>
-          <span class='ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-300 group-hover:h-full'></span>
           Dites-moi bonjour 👋
-        </Link>
+        </LinkButton>
+        <p className='mb-4 text-p text-white'>vincent.durret@gmail.com</p>
 
         <div className='mb-4 h-[1px] w-1/2 bg-gray-400'></div>
         <div className='flex flex-row items-center justify-center'>
@@ -38,7 +36,7 @@ const SectionContact = () => {
           >
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              className=' w-12 text-white transition-all duration-300 hover:text-[#0e76a8]'
+              className=' w-12 text-4xl text-white transition-all duration-300 hover:text-[#0e76a8]'
             />
           </Link>
           <Link
@@ -49,7 +47,7 @@ const SectionContact = () => {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className='w-12 text-white transition-all duration-300 hover:text-[#171515]'
+              className='w-12 text-4xl text-white transition-all duration-300 hover:text-[#171515]'
             />
           </Link>
         </div>

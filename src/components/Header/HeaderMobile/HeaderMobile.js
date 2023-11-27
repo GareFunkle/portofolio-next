@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 const linksItems = [
-  { name: "Accueil", icon: faHome, link: "#accueil" },
+  { name: "Accueil", icon: faHome, link: "/" },
   { name: "À propos", icon: faUser, link: "#a-propos" },
   { name: "Compétences", icon: faDumbbell, link: "#competences" },
   { name: "Experiences", icon: faBriefcase, link: "#experiences" },
@@ -19,8 +19,7 @@ const linksItems = [
 const HeaderMobile = () => {
   return (
     <div>
-      <div className='fixed bottom-0 left-0 z-40 h-48 w-full backdrop-blur gradient-mask-t-0  '></div>
-      <div className='fixed bottom-8 left-1/2 z-50 h-16 w-11/12 max-w-lg -translate-x-1/2 rounded-lg border border-gray-200 bg-[#151515] text-white md:z-40 md:hidden '>
+      <div className='fixed left-1/2 top-8 z-50 h-16 w-11/12 max-w-lg -translate-x-1/2 rounded-lg border border-gray-200 bg-[#151515] text-white md:z-40 md:hidden '>
         <div className='relative top-1/2 block  -translate-y-1/2  md:hidden '>
           <div className='flex items-center justify-between p-4 '>
             {linksItems.map((item) => (

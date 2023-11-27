@@ -27,7 +27,7 @@ const HeaderIcons = () => {
       variants={boxVariants}
       initial={"hidden"}
       animate={"visible"}
-      className='fixed bottom-0 left-12 z-50'
+      className='fixed bottom-0 left-12 z-50 hidden md:block'
     >
       <div className='rounded-t-lg bg-white/20 backdrop-blur-lg '>
         <div className='flex flex-col items-center justify-center space-y-6  px-2 pt-2 '>

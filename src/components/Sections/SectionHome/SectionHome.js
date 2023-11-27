@@ -6,8 +6,8 @@ import HomeVideo from "@/components/Sections/SectionHome/HomeVideo/HomeVideo";
 import { motion } from "framer-motion";
 
 const boxVariants = {
-  visible: { scale: 1, opacity: 1 },
-  hidden: { scale: 2, opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0 },
 };
 
 const boxFadeInUp = {
@@ -24,7 +24,6 @@ const SectionHome = () => {
           variants={boxVariants}
           initial={"hidden"}
           animate={"visible"}
-          transition={{ duration: 0.3 }}
           className='flex  items-center justify-center '
         >
           <VDLogo
