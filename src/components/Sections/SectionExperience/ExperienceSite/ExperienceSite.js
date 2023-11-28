@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,12 +9,14 @@ import { motion } from "framer-motion";
 const boxVariants = {
   hidden: {
     opacity: 0,
+    y: 100,
   },
   visible: {
     opacity: 1,
-
+    y: 0,
     transition: {
-      duration: 0.5,
+      duration: 1,
+      ease: "easeInOut",
     },
   },
 };
@@ -29,76 +29,80 @@ const ExperienceSite = (props) => {
     };
   }, []);
   return (
-    <motion.div
-      variants={boxVariants}
-      initial={"hidden"}
-      animate={"visible"}
-      className=' fixed left-1/2 top-[10%] z-50 h-full w-11/12 -translate-x-1/2 '
-    >
-      <div className='h-full w-full overflow-scroll  rounded-t-lg border-x border-t border-my-color bg-black/30 bg-opacity-20 p-4 backdrop-blur-xl'>
-        <div className='absolute right-12 top-16 '>
-          <p
-            onClick={props.handleClose}
-            className='group relative mb-4 inline-block cursor-pointer overflow-hidden rounded border border-white/40  px-12 py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white'
-          >
-            <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
-            <span className='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
-            <span className='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-300 group-hover:w-full'></span>
-            <span className='ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-300 group-hover:h-full'></span>
-            Fermer
-          </p>
-        </div>
-        <div className='mt-24  p-2 md:p-8'>
-          <div className='mb-4  p-2'>
-            <h2 className='mb-4 text-center text-h2 font-bold text-my-color underline underline-offset-8'>
-              {props.selectedItem.name ? props.selectedItem.name : ""}
-            </h2>
-            <h3 className='text-h3 text-white'>{props.selectedItem.project}</h3>
-            <p className='py-2 text-p text-white'>
-              <span className='font-bold text-white/40'>Objectifs :</span>{" "}
-              {props.selectedItem.goals ? props.selectedItem.goals : ""}
-            </p>
-            <p className='py-2 text-p text-white'>
-              <span className='font-bold text-white/40'>Developpement :</span>{" "}
-              {props.selectedItem.dev ? props.selectedItem.dev : ""}
-            </p>
-            <p className='py-2 text-p text-white'>
-              {props.selectedItem.personalization
-                ? props.selectedItem.personalization
-                : ""}
-            </p>
-            <p className='py-2 text-p text-white'>
-              {props.selectedItem.conclusion
-                ? props.selectedItem.conclusion
-                : ""}
-            </p>
-            <ButtonLink
-              href={
-                props.selectedItem.website ? props.selectedItem.website : "#"
-              }
-              target='_blank'
-              rel='noreferrer'
-              className='group relative mb-4 inline-block overflow-hidden rounded border border-white/40  px-12 py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white'
+    <div className=' fixed left-1/2 top-[10%] z-50 h-full w-11/12 -translate-x-1/2 '>
+      <motion.div
+        variants={boxVariants}
+        initial={"hidden"}
+        animate={"visible"}
+        className='overflow-scroll'
+      >
+        <div className='h-full w-full overflow-scroll  rounded-t-lg border-x border-t border-my-color bg-black/30 bg-opacity-20 p-4 backdrop-blur-xl'>
+          <div className='absolute right-12 top-16 '>
+            <p
+              onClick={props.handleClose}
+              className='group relative mb-4 inline-block cursor-pointer overflow-hidden rounded border border-white/40  px-12 py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white'
             >
               <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
               <span className='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
               <span className='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-300 group-hover:w-full'></span>
               <span className='ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-300 group-hover:h-full'></span>
-              Voir le site
-            </ButtonLink>
+              Fermer
+            </p>
           </div>
-          <div className=''>
-            <Image
-              width={1920}
-              height={1080}
-              src={props.selectedItem.imgSite}
-              alt=''
-              className='rounded-lg'
-            />
+          <div className='mt-24  p-2 md:p-8'>
+            <div className='mb-4  p-2'>
+              <h2 className='mb-4 text-center text-h2 font-bold text-my-color underline underline-offset-8'>
+                {props.selectedItem.name ? props.selectedItem.name : ""}
+              </h2>
+              <h3 className='text-h3 text-white'>
+                {props.selectedItem.project}
+              </h3>
+              <p className='py-2 text-p text-white'>
+                <span className='font-bold text-white/40'>Objectifs :</span>{" "}
+                {props.selectedItem.goals ? props.selectedItem.goals : ""}
+              </p>
+              <p className='py-2 text-p text-white'>
+                <span className='font-bold text-white/40'>Developpement :</span>{" "}
+                {props.selectedItem.dev ? props.selectedItem.dev : ""}
+              </p>
+              <p className='py-2 text-p text-white'>
+                {props.selectedItem.personalization
+                  ? props.selectedItem.personalization
+                  : ""}
+              </p>
+              <p className='py-2 text-p text-white'>
+                {props.selectedItem.conclusion
+                  ? props.selectedItem.conclusion
+                  : ""}
+              </p>
+              <ButtonLink
+                href={
+                  props.selectedItem.website ? props.selectedItem.website : "#"
+                }
+                target='_blank'
+                rel='noreferrer'
+                className='group relative mb-4 inline-block overflow-hidden rounded border border-white/40  px-12 py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white'
+              >
+                <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
+                <span className='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
+                <span className='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-300 group-hover:w-full'></span>
+                <span className='ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-300 group-hover:h-full'></span>
+                Voir le site
+              </ButtonLink>
+            </div>
+            <div className=''>
+              <Image
+                width={1920}
+                height={1080}
+                src={props.selectedItem.imgSite}
+                alt=''
+                className='rounded-lg'
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
