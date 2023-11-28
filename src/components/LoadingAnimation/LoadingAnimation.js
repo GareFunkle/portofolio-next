@@ -20,7 +20,7 @@ const logoAnimation = {
   },
 };
 
-const textAnimation = {
+const firstTextAnimation = {
   hidden: {
     opacity: 0,
     y: 100,
@@ -30,6 +30,21 @@ const textAnimation = {
     y: 0,
     transition: {
       delay: 1,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
+const secondTextAnimation = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1.2,
       duration: 1,
       ease: "easeInOut",
     },
@@ -55,6 +70,7 @@ const LoadingAnimation = ({ onDone }) => {
       onAnimationComplete={onDone}
       initial={"hidden"}
       animate={"visible"}
+      className='overflow-hidden'
     >
       <div className=' h-screen w-screen bg-black'>
         <div className='relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -74,16 +90,22 @@ const LoadingAnimation = ({ onDone }) => {
               />
             </motion.div>
             <motion.div
-              variants={textAnimation}
+              variants={firstTextAnimation}
               initial={"hidden"}
               animate={"visible"}
             >
               <h1 className='text-center text-h1 font-bold text-white '>
                 Vincent Durret
               </h1>
-              <h2 className='text-center text-h2 font-bold text-white'>
-                Développeur Web
-              </h2>
+              <motion.div
+                variants={secondTextAnimation}
+                initial={"hidden"}
+                animate={"visible"}
+              >
+                <h2 className='text-center text-h2 font-bold text-white'>
+                  Développeur Web
+                </h2>
+              </motion.div>
             </motion.div>
           </div>
         </div>

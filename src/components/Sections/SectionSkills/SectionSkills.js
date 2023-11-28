@@ -62,12 +62,6 @@ const skills = [
     title: "Github",
     hoverColor: "#171515",
   },
-  {
-    category: "Other",
-    icons: faReddit,
-    title: "Reddit",
-    hoverColor: "#FF5700",
-  },
 ];
 
 const SectionSkills = () => {
@@ -76,9 +70,9 @@ const SectionSkills = () => {
   return (
     <section id='competences' className=' mb-16 h-auto w-full'>
       <div className='container mx-auto p-4'>
-        <h1 className='mb-8 text-h1 font-bold text-white'>Compétences </h1>
+        <h1 className='mb-8 text-h1 font-bold text-white'>Compétences</h1>
         {categories.map((category, index) => (
-          <div key={index}>
+          <div key={index} className='px-0 md:px-6 lg:px-12'>
             <h2 className='text-h2 font-bold text-white'>{category}</h2>
             <Grid>
               {skills
@@ -86,7 +80,7 @@ const SectionSkills = () => {
                 .map((skill, index) => (
                   <FontAwesomeIcon
                     key={index}
-                    className={`h-auto w-8 cursor-pointer rounded-md bg-opacity-20 p-4 text-white transition-all duration-300 hover:scale-105 hover:bg-white  hover:bg-opacity-10  hover:backdrop-blur-sm  hover:backdrop-filter active:scale-95 sm:w-16 md:w-24 lg:w-20 hover-text-${skill.title.toLowerCase()}`}
+                    className={`h-auto w-8 cursor-pointer rounded-md bg-opacity-20 p-4 text-white transition-all duration-300 hover:scale-105 hover:bg-white  hover:bg-opacity-10  hover:backdrop-blur-sm  hover:backdrop-filter active:scale-95 sm:w-16 md:w-20  hover-text-${skill.title.toLowerCase()}`}
                     icon={skill.icons}
                     title={skill.title}
                   />

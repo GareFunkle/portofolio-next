@@ -27,7 +27,7 @@ const SectionAbout = () => {
   return (
     <section
       id='a-propos'
-      className='  flex h-full max-w-full items-center justify-center p-4 '
+      className='  flex h-full max-w-full items-center justify-center px-4 py-24 '
     >
       <motion.div
         variants={wrapperVariants}
