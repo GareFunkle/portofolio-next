@@ -1,5 +1,3 @@
-"use client";
-
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -35,13 +33,19 @@ const HeaderIcons = () => {
             href='https://www.facebook.com'
             className='text-2xl text-white transition-all duration-300 hover:-translate-y-1'
           >
-            <FontAwesomeIcon icon={faGithub} className='w-8' />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className='w-8  transition-all duration-300 hover:text-[#171515]'
+            />
           </Link>
           <Link
             href='https://www.linkedin.com'
             className='text-2xl text-white transition-all duration-300 hover:-translate-y-1'
           >
-            <FontAwesomeIcon icon={faLinkedin} className='w-8' />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className='w-8 transition-all duration-300 hover:text-[#0e76a8]'
+            />
           </Link>
 
           <div className='relative h-24 w-px bg-white'>

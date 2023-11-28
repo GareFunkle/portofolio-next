@@ -5,10 +5,12 @@ export const metadata = {
   description: "Portofolio Developpeur Web Vincent Durret",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang='fr'>
       <body>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

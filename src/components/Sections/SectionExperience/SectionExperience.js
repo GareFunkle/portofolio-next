@@ -60,7 +60,7 @@ const SectionExperience = () => {
             selectedCategory={selectedCategory}
           />
 
-          <div className='mt-8 flex-1 lg:mx-12 lg:mt-0'>
+          <div className='mx-2 mt-8 flex-1 lg:mx-8 lg:mt-0'>
             <ExperienceItems
               items={items}
               selectedCategory={selectedCategory}

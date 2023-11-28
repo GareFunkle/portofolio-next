@@ -21,9 +21,9 @@ const wrapperVariants = {
     },
   },
 };
+const Box = motion(AnimateBox);
 
 const ExperienceItems = (props) => {
-  const Box = motion(AnimateBox);
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleClick = (item) => {

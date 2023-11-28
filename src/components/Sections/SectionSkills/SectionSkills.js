@@ -80,18 +80,18 @@ const SectionSkills = () => {
         {categories.map((category, index) => (
           <div key={index}>
             <h2 className='text-h2 font-bold text-white'>{category}</h2>
-            <div className='grid w-full grid-cols-4 gap-8 sm:grid-cols-4 sm:gap-12 md:grid-cols-6 md:gap-10 lg:grid-cols-8 lg:gap-12'>
+            <Grid>
               {skills
                 .filter((skill) => skill.category === category)
                 .map((skill, index) => (
                   <FontAwesomeIcon
                     key={index}
-                    className={`h-auto w-16 cursor-pointer rounded-md bg-opacity-20 p-4 text-white transition-all duration-300 hover:scale-105 hover:bg-white  hover:bg-opacity-10  hover:backdrop-blur-sm  hover:backdrop-filter active:scale-95 sm:w-16 md:w-24 lg:w-20 hover-text-${skill.title.toLowerCase()}`}
+                    className={`h-auto w-8 cursor-pointer rounded-md bg-opacity-20 p-4 text-white transition-all duration-300 hover:scale-105 hover:bg-white  hover:bg-opacity-10  hover:backdrop-blur-sm  hover:backdrop-filter active:scale-95 sm:w-16 md:w-24 lg:w-20 hover-text-${skill.title.toLowerCase()}`}
                     icon={skill.icons}
                     title={skill.title}
                   />
                 ))}
-            </div>
+            </Grid>
           </div>
         ))}
       </div>
