@@ -30,12 +30,7 @@ const ExperienceSite = (props) => {
   }, []);
   return (
     <div className=' fixed left-1/2 top-[10%] z-50 h-full w-11/12 -translate-x-1/2 '>
-      <motion.div
-        variants={boxVariants}
-        initial={"hidden"}
-        animate={"visible"}
-        className='overflow-scroll'
-      >
+      <motion.div variants={boxVariants} initial={"hidden"} animate={"visible"}>
         <div className='h-full w-full overflow-scroll  rounded-t-lg border-x border-t border-my-color bg-black/30 bg-opacity-20 p-4 backdrop-blur-xl'>
           <div className='absolute right-12 top-16 '>
             <p
