@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ExprerienceSite from "../ExperienceSite/ExperienceSite";
 import AnimateBox from "@/components/ui/animateBox/AnimateBox";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const boxVariants = {
   hidden: { opacity: 0, y: 100 },
@@ -70,7 +70,7 @@ const ExperienceItems = (props) => {
           <Image
             width={1920}
             height={1080}
-            className='h-96 w-full cursor-pointer rounded-lg object-cover transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_50px_#003549]  active:scale-95 '
+            className='h-11/12 w-full cursor-pointer rounded-lg object-cover transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_50px_#003549]  active:scale-95 '
             src={item.src}
             alt=''
             onClick={() => handleClick(item)}
@@ -82,13 +82,15 @@ const ExperienceItems = (props) => {
           </p>
         </Box>
       ))}
-      {selectedItem && (
-        <ExprerienceSite
-          handleClose={handleClose}
-          handleClick={handleClick}
-          selectedItem={selectedItem}
-        />
-      )}
+      <AnimatePresence>
+        {selectedItem && (
+          <ExprerienceSite
+            handleClose={handleClose}
+            handleClick={handleClick}
+            selectedItem={selectedItem}
+          />
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

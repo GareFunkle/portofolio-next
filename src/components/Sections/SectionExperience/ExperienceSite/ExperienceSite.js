@@ -9,15 +9,15 @@ import ExperienceSiteContent from "./ExperienceSiteContent/ExperienceSiteContent
 
 const boxVariants = {
   hidden: {
-    opacity: 0,
     y: 100,
+    transition: {
+      duration: 1,
+    },
   },
   visible: {
-    opacity: 1,
     y: 0,
     transition: {
       duration: 1,
-      ease: "easeInOut",
     },
   },
 };
@@ -35,6 +35,7 @@ const ExperienceSite = (props) => {
         variants={boxVariants}
         initial={"hidden"}
         animate={"visible"}
+        exit={"hidden"}
         className='h-full w-full overflow-scroll  rounded-t-lg border-x border-t border-my-color bg-black/30 bg-opacity-20 p-4 backdrop-blur-xl'
       >
         <div className='absolute right-12 top-16 '>

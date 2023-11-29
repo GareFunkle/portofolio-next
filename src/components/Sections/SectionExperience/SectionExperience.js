@@ -55,7 +55,7 @@ const SectionExperience = () => {
       className='  h-full w-full md:h-full lg:h-screen '
     >
       <div className='container  mx-auto p-4'>
-        <h1 className='text-h1 font-semibold text-white'>Experiences </h1>
+        <h1 className='text-h1 font-semibold text-white'>Experiences</h1>
 
         <div className='mt-8  lg:flex xl:mt-16'>
           <ExperienceLinks
