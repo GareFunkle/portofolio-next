@@ -12,6 +12,7 @@ import HeaderMobile from "@/components/Header/HeaderMobile/HeaderMobile";
 import HeaderIcons from "@/components/Header/HeaderIcon/HeaderIcons";
 import LoadingAnimation from "@/components/LoadingAnimation/LoadingAnimation";
 import { motion } from "framer-motion";
+import HeaderMail from "@/components/Header/HeaderMail/HeaderMail";
 
 const boxVariants = {
   hidden: {
@@ -38,6 +39,7 @@ const Home = () => {
         >
           <Header />
           <HeaderIcons />
+          <HeaderMail />
           <HeaderMobile />
           <SectionHome />
           <SectionAbout />

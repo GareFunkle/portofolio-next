@@ -57,7 +57,7 @@ const pageAnimation = {
     opacity: 0,
     transition: {
       delay: 2, // Ajustez ce délai pour qu'il corresponde à la fin de l'animation du logo
-      duration: 1.5,
+      duration: 0.3,
       ease: "easeInOut",
     },
   },

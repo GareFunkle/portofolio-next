@@ -5,7 +5,7 @@ const ExperienceSiteContent = (props) => {
   return (
     <div className='mb-4  p-2'>
       <div className='flex items-center justify-center'>
-        <h2 className='mb-8 rounded-lg bg-my-color p-2 text-center text-h2 font-bold text-white'>
+        <h2 className='mb-8  p-2 text-center text-h2 font-bold text-white'>
           {props.selectedItem.name ? props.selectedItem.name : ""}
         </h2>
       </div>
