@@ -67,10 +67,9 @@ const LoadingAnimation = ({ onDone }) => {
   return (
     <motion.div
       variants={pageAnimation}
-      onAnimationComplete={onDone}
       initial={"hidden"}
       animate={"visible"}
-      className='overflow-hidden'
+      className='overflow-hidden '
     >
       <div className=' h-screen w-screen bg-black'>
         <div className='relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -78,6 +77,7 @@ const LoadingAnimation = ({ onDone }) => {
             <motion.div
               style={{ transformOrigin: "50% 43%" }}
               variants={logoAnimation}
+              onAnimationComplete={onDone}
               animate={"visible"}
               initial={"hidden"}
             >
