@@ -46,7 +46,7 @@ const ExperienceSite = (props) => {
           <div className='absolute right-12 top-16 '>
             <span
               onClick={props.handleClose}
-              className='group relative mb-4 inline-block cursor-pointer overflow-hidden rounded border border-white/40 px-12  py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white md:hidden'
+              className='group relative mb-4 inline-block cursor-pointer overflow-hidden rounded border border-white/40 px-12  py-3 text-p font-medium text-white hover:text-white/40 focus:outline-none focus:ring active:bg-my-color active:text-white '
             >
               <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-300 group-hover:w-full'></span>
               <span className='ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-300 group-hover:h-full'></span>
