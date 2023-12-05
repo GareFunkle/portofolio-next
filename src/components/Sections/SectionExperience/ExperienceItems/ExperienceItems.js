@@ -41,7 +41,13 @@ const ExperienceItems = (props) => {
         );
 
   if (props.selectedCategory === "Tous les projets") {
-    const order = ["Wordpress", "Shopify", "Vue.js", "React/Next"];
+    const order = [
+      "Wordpress",
+      "Shopify",
+      "Vue.js",
+      "React/Next",
+      "Python/Pygames",
+    ];
     const orderedImages = [];
     let i = 0;
     while (filteredImages.length > 0) {

@@ -13,6 +13,7 @@ const boxVariants = {
     opacity: 1,
     y: 0,
     transition: {
+      delay: 0.5,
       type: "spring",
       duration: 0.9,
     },
@@ -30,7 +31,9 @@ const HeaderIcons = () => {
       <div className='rounded-t-lg bg-white/20 backdrop-blur-lg '>
         <div className='flex flex-col items-center justify-center space-y-6  px-2 pt-2 '>
           <Link
-            href='https://www.facebook.com'
+            href='https://github.com/Vincent-Durret'
+            target='_blank'
+            rel='noreferrer'
             className='text-2xl text-white transition-all duration-300 hover:-translate-y-1'
           >
             <FontAwesomeIcon
@@ -39,7 +42,9 @@ const HeaderIcons = () => {
             />
           </Link>
           <Link
-            href='https://www.linkedin.com'
+            href='https://www.linkedin.com/in/vincent-durret-5682a1220/'
+            target='_blank'
+            rel='noreferrer'
             className='text-2xl text-white transition-all duration-300 hover:-translate-y-1'
           >
             <FontAwesomeIcon

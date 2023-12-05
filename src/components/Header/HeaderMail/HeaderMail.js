@@ -11,6 +11,7 @@ const boxVariants = {
     opacity: 1,
     y: 0,
     transition: {
+      delay: 0.5,
       type: "spring",
       duration: 0.9,
     },
@@ -29,7 +30,7 @@ const HeaderMail = () => {
         <div className='flex flex-col items-center justify-center  space-y-6 px-2 pt-4  '>
           <div className=''>
             <Link
-              href='https://www.facebook.com'
+              href='mailto:vincent.durret@gmail.com?subject=Site Web'
               className=' text-base text-white transition-all duration-300 [writing-mode:vertical-lr] hover:-translate-y-1'
             >
               vincent.durret@gmail.com
