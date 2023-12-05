@@ -20,7 +20,7 @@ const ExperienceSiteContent = (props) => {
           >
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
-              className='px-4 text-4xl text-white transition-all duration-300 hover:text-white/40'
+              className='px-4 text-base text-white transition-all duration-300 hover:text-white/40 md:text-2xl'
             />
           </Link>
         ) : (
@@ -29,7 +29,7 @@ const ExperienceSiteContent = (props) => {
         {props.selectedItem.git ? (
           <Link href={props.selectedItem.git} target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
-              className='px-4 text-5xl text-white transition-all duration-300 hover:text-[#171515]'
+              className='px-4 text-base text-white transition-all duration-300 hover:text-[#171515] md:text-2xl'
               icon={faGithub}
             />
           </Link>

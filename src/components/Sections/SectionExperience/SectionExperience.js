@@ -75,7 +75,7 @@ const SectionExperience = () => {
   return (
     <section
       id='experiences'
-      className='  h-full w-full md:h-full lg:h-screen '
+      className='  h-full w-full md:h-full lg:h-[70vh] '
     >
       <div className='container  mx-auto p-4'>
         <h1 className='text-h1 font-semibold text-white'>Experiences</h1>
