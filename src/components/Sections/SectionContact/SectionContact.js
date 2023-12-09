@@ -10,7 +10,7 @@ import LinkButton from "@/components/ui/buttonLink/ButtonLink";
 
 const SectionContact = () => {
   return (
-    <section id='contact' className='relative  h-screen w-full  '>
+    <section id='contact' className='relative h-[70vh]  w-full md:h-screen  '>
       <div className='flex h-full w-full flex-col items-center justify-center '>
         <h2 className='mb-4 text-h1 font-bold text-white'>Contact</h2>
         <div className='mb-4 h-[1px] w-1/2 bg-gray-400'></div>
