@@ -12,55 +12,53 @@ import {
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { motion, AnimatePresence } from "framer-motion";
+
+const boxVariants = {
+  hidden: { y: 100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+};
 
 const skills = [
   {
     category: "Frontend",
     icons: faHtml5,
     title: "html-5",
-    hoverColor: "#e34c26",
   },
   {
     category: "Frontend",
     icons: faCss3Alt,
     title: "CSS-3",
-    hoverColor: "#264de4",
   },
   {
     category: "Frontend",
     icons: faReact,
     title: "React",
-    hoverColor: "#61dbfb",
   },
   {
     category: "Frontend",
     icons: faVuejs,
     title: "Vue",
-    hoverColor: "#41B883",
   },
   {
     category: "CMS",
     icons: faWordpress,
     title: "Wordpress",
-    hoverColor: "#00749C",
   },
   {
     category: "CMS",
     icons: faShopify,
     title: "Shopify",
-    hoverColor: "#96bf48",
   },
   {
     category: "Backend",
     icons: faDatabase,
     title: "Database",
-    hoverColor: "#0070f3",
   },
   {
     category: "Other",
     icons: faGithub,
     title: "Github",
-    hoverColor: "#171515",
   },
 ];
 
@@ -69,11 +67,18 @@ const SectionSkills = () => {
 
   return (
     <section id='competences' className=' mb-16 h-auto w-full'>
-      <div className='container mx-auto p-4'>
+      <motion.div
+        variant={boxVariants}
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        className='container mx-auto p-4'
+      >
         <h1 className='mb-8 text-h1 font-bold text-white'>Compétences</h1>
         {categories.map((category, index) => (
           <div key={index} className='px-0 md:px-6 lg:px-12'>
             <h2 className='text-h2 font-bold text-white'>{category}</h2>
+
             <Grid>
               {skills
                 .filter((skill) => skill.category === category)
@@ -88,7 +93,7 @@ const SectionSkills = () => {
             </Grid>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

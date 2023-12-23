@@ -29,7 +29,7 @@ const ExperienceSiteContent = (props) => {
         {props.selectedItem.git ? (
           <Link href={props.selectedItem.git} target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
-              className='px-4 text-base text-white transition-all duration-300 hover:text-[#171515] md:text-2xl'
+              className='px-4 text-base text-white transition-all duration-300 hover:text-[#6e5494] md:text-2xl'
               icon={faGithub}
             />
           </Link>

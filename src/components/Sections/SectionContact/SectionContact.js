@@ -47,7 +47,7 @@ const SectionContact = () => {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className='w-12 text-4xl text-white transition-all duration-300 hover:text-[#171515]'
+              className='w-12 text-4xl text-white transition-all duration-300 hover:text-[#6e5494]'
             />
           </Link>
         </div>
