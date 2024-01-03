@@ -4,6 +4,8 @@ import {
   faPython,
   faHtml5,
   faReact,
+  faJs,
+  faPhp,
   faReddit,
   faShopify,
   faVuejs,
@@ -21,6 +23,11 @@ const skills = [
     category: "Frontend",
     icons: faCss3Alt,
     title: "CSS-3",
+  },
+  {
+    category: "Frontend",
+    icons: faJs,
+    title: "Javascript",
   },
   {
     category: "Frontend",
@@ -44,13 +51,13 @@ const skills = [
   },
   {
     category: "Backend",
-    icons: faDatabase,
-    title: "Database",
+    icons: faPython,
+    title: "Python",
   },
   {
     category: "Backend",
-    icons: faPython,
-    title: "Python",
+    icons: faPhp,
+    title: "Php",
   },
   {
     category: "Other",

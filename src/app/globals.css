@@ -139,3 +139,11 @@ html {
 .hover-text-python:hover {
   color:#FFDE57;
 }
+
+.hover-text-php:hover {
+  color: #777BB3;
+}
+
+.hover-text-javascript:hover {
+  color: #F0DB4F;
+}

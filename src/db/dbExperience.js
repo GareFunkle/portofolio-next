@@ -8,6 +8,7 @@ import {
   faVuejs,
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
+
 const items = [
   {
     categories: ["Wordpress"],
@@ -65,7 +66,7 @@ const items = [
   {
     categories: ["React/Next"],
     iconCategory: faReact,
-    src: "/images/portofolio/logo_big_givi.png",
+    src: "/images/portofolio/logo_big_givi.jpg",
     name: "GIVI Agence Digitale",
     goals:
       "Création d'un site vitrine pour l'agence GIVI Agence Digitale avec Next.js",
@@ -78,7 +79,7 @@ const items = [
   {
     categories: ["Python/Pygames"],
     iconCategory: faPython,
-    src: "/images/portofolio/logo-traveler.png",
+    src: "/images/portofolio/logo-traveler.jpg",
     name: "Traveler Game",
     goals: "Création d'un jeu en python avec pygame",
     dev: "J'ai créer ce jeu avec deux amis dont un qui etais graphiste et l'autre dans la communication. J'ai pu apprendre a utiliser pygame et a creer un jeu avec des fonctionalités basique mais qui fonctionne !",
