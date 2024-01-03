@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import ExprerienceSite from "../ExperienceSite/ExperienceSite";
 import AnimateBox from "@/components/ui/animateBox/AnimateBox";
 import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const boxVariants = {
   hidden: { opacity: 0, y: 100 },
@@ -84,7 +85,7 @@ const ExperienceItems = (props) => {
 
           <h2 className='mt-4 text-p font-semibold  text-white'>{item.name}</h2>
           <p className='mt-2 text-lg font-bold uppercase tracking-wider text-white '>
-            {item.categories}
+            {item.categories} <FontAwesomeIcon icon={item.iconCategory} />
           </p>
         </Box>
       ))}

@@ -51,30 +51,29 @@ const SectionAbout = () => {
           </Box>
           <Box variants={boxVariants}>
             <p className='mb-4 text-p text-white '>
-              Ancien électricien animé par une passion indéniable pour la
-              technologie, j'ai opéré un tournant décisif en me lançant dans le
-              monde fascinant du développement web. Cette reconversion m'a
-              rapidement ouvert les portes des aspects techniques et marketing
-              de ce domaine, me permettant ainsi d'affûter mes compétences et de
-              devenir un développeur polyvalent.
+              Ma passion pour l'apprentissage et l'innovation me guide
+              aujourd'hui vers une nouvelle aventure passionnante : le
+              développement web. Cette aspiration reflète mon désir de m'engager
+              dans un domaine à la fois créatif et technologique, où je peux
+              constamment évoluer et relever de nouveaux défis.
               <br />
               <br />
-              Ma capacité d'adaptation me permet de naviguer aisément entre
-              différentes missions : que ce soit en développant des projets avec
-              Vue.Js ou en effectuant des intégrations web, je relève chaque
-              défi avec une aisance naturelle. Mon esprit logique, ma passion
-              pour les casse-têtes et le débogage de codes enrichissent mon
-              approche du développement web, me permettant de trouver des
-              solutions créatives et efficaces aux problèmes complexes.
+              Bien que mon parcours professionnel ait débuté dans des domaines
+              variés, c'est la technologie et le potentiel infini du web qui
+              captivent désormais toute mon attention. Ma capacité à apprendre
+              rapidement, ma créativité et mon esprit d'analyse sont des atouts
+              que je suis impatient de mettre en œuvre dans le développement
+              web.
             </p>
             <Box variants={boxVariants}>
               <p className='text-p text-white'>
-                Mon but ? Poursuivre l'enrichissement de mon savoir-faire et
-                embrasser constamment de nouvelles compétences. Déterminé et
-                prêt à affronter de nouveaux challenges, je suis enthousiaste à
-                l'idée d'apporter ma contribution à des projets innovants et de
-                collaborer avec des équipes partageant mon engouement pour la
-                technologie et le développement web.
+                Je suis enthousiaste à l'idée de fusionner mes compétences
+                acquises avec les connaissances spécifiques au développement
+                web, me permettant d'apporter une perspective unique et
+                innovante à ce secteur. Mon objectif est de devenir un
+                développeur web polyvalent, capable de s'adapter aux évolutions
+                rapides de cette industrie et de contribuer activement à la
+                création de solutions digitales pertinentes.
               </p>
             </Box>
           </Box>
