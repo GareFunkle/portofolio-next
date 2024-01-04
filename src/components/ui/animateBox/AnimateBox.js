@@ -5,4 +5,6 @@ const AnimateBox = forwardRef(({ children }, ref) => {
   return <motion.div ref={ref}>{children}</motion.div>;
 });
 
+AnimateBox.displayName = "AnimateBox";
+
 export default AnimateBox;

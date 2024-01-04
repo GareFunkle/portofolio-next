@@ -51,29 +51,29 @@ const SectionAbout = () => {
           </Box>
           <Box variants={boxVariants}>
             <p className='mb-4 text-p text-white '>
-              Ma passion pour l'apprentissage et l'innovation me guide
-              aujourd'hui vers une nouvelle aventure passionnante : le
-              développement web. Cette aspiration reflète mon désir de m'engager
-              dans un domaine à la fois créatif et technologique, où je peux
-              constamment évoluer et relever de nouveaux défis.
+              Ma passion pour l&apos;apprentissage et l&apos;innovation me guide
+              aujourd&apos;hui vers une nouvelle aventure passionnante : le
+              développement web. Cette aspiration reflète mon désir de
+              m&apos;engager dans un domaine à la fois créatif et technologique,
+              où je peux constamment évoluer et relever de nouveaux défis.
               <br />
               <br />
               Bien que mon parcours professionnel ait débuté dans des domaines
-              variés, c'est la technologie et le potentiel infini du web qui
-              captivent désormais toute mon attention. Ma capacité à apprendre
-              rapidement, ma créativité et mon esprit d'analyse sont des atouts
-              que je suis impatient de mettre en œuvre dans le développement
-              web.
+              variés, c&apos;est la technologie et le potentiel infini du web
+              qui captivent désormais toute mon attention. Ma capacité à
+              apprendre rapidement, ma créativité et mon esprit d&apos;analyse
+              sont des atouts que je suis impatient de mettre en œuvre dans le
+              développement web.
             </p>
             <Box variants={boxVariants}>
               <p className='text-p text-white'>
-                Je suis enthousiaste à l'idée de fusionner mes compétences
+                Je suis enthousiaste à l&apos;idée de fusionner mes compétences
                 acquises avec les connaissances spécifiques au développement
-                web, me permettant d'apporter une perspective unique et
+                web, me permettant d&apos;apporter une perspective unique et
                 innovante à ce secteur. Mon objectif est de devenir un
-                développeur web polyvalent, capable de s'adapter aux évolutions
-                rapides de cette industrie et de contribuer activement à la
-                création de solutions digitales pertinentes.
+                développeur web polyvalent, capable de s&apos;adapter aux
+                évolutions rapides de cette industrie et de contribuer
+                activement à la création de solutions digitales pertinentes.
               </p>
             </Box>
           </Box>

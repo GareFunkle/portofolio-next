@@ -6,6 +6,7 @@
     "dev": "next dev",
     "host": "yarn next dev -H 192.168.1.42",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier . --write"
