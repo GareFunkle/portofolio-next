@@ -1,5 +1,5 @@
 import React from "react";
-import Grid from "@/components/ui/grid/grid";
+import Grid from "@/components/ui/grid/Grid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, AnimatePresence } from "framer-motion";
 import skills from "@/db/dbSkills";
