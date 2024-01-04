@@ -11,13 +11,13 @@ const boxVariants = {
   hidden: {
     y: 100,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
   visible: {
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -57,7 +57,7 @@ const ExperienceSite = (props) => {
           </div>
           <div className='mt-24 p-1 md:p-8'>
             <ExperienceSiteContent selectedItem={props.selectedItem} />
-            <div className='py-8'>
+            <div className='flex items-center justify-center py-8'>
               <Image
                 width={1920}
                 height={1080}
