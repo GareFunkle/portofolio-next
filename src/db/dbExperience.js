@@ -20,7 +20,7 @@ const items = [
     dev: "Dans le cadre de ce projet, j'ai utilisé WordPress et WooCommerce. J'ai intégré des filtres de recherche personnalisés et simplifié le processus de paiement. Parmi les caractéristiques notables, j'ai mis en place un système de suivi de colis en collaboration avec Mondial Relay, ainsi que l'installation de points de fidélité. Un espace client personnalisé a été créé, ainsi qu’une fenêtre pop-up pour les annonces ou offres spéciales. Le paramétrage des moyens de paiement a été effectué pour garantir une expérience d'achat fluide. J'ai également eu l'opportunité de concevoir l'intégralité du design du site sans contraintes, ce qui a permis une grande liberté créative. Enfin, un shooting photo pour les produits a été organisé, assurant des visuels de haute qualité.  De plus, le site est entièrement responsive, garantissant une version mobile optimisée.",
     conclusion:
       "Ce projet a été une expérience enrichissante qui a consolidé ma maîtrise de WordPress et WooCommerce, tout en me permettant d'explorer de nouvelles facettes du développement web. La réussite de ce projet illustre ma capacité à transformer des exigences techniques en une plateforme en ligne dynamique et accessible, démontrant ainsi mon expertise dans le développement de solutions e-commerce performantes et esthétiquement agréables.",
-    imgSite: "/images/portofolio/website/excellium-nutrition.png",
+    imgSite: "/images/portofolio/website/excellium-nutrition.webp",
     website: "https://www.excellium-nutrition.com/",
   },
   {
