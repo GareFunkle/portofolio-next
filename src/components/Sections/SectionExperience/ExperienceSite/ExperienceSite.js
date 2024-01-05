@@ -62,7 +62,8 @@ const ExperienceSite = (props) => {
                 width={1920}
                 height={1080}
                 src={props.selectedItem.imgSite}
-                alt=''
+                alt={props.selectedItem.altTwo}
+                priority
                 className='rounded-lg '
               />
             </div>

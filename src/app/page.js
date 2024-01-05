@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Header from "@/components/Header/Header";
 import SectionContact from "@/components/Sections/SectionContact/SectionContact";
@@ -21,35 +21,49 @@ const boxVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 1,
+      delay: 2,
+      duration: 2,
       ease: "easeInOut",
     },
   },
 };
 
 const Home = () => {
-  const [isAnimationDone, setIsAnimationDone] = useState(false);
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  useEffect(() => {
+    if (!isAnimationComplete) {
+      // Désactiver le défilement
+      document.body.style.overflow = "hidden";
+    } else {
+      // Réactiver le défilement
+      document.body.style.overflow = "";
+    }
+  }, [isAnimationComplete]);
+
   return (
     <div>
-      {isAnimationDone ? (
-        <motion.div
-          variants={boxVariants}
-          initial={"hidden"}
-          animate={"visible"}
-        >
-          <Header />
-          <HeaderIcons />
-          <HeaderMail />
-          <HeaderMobile />
-          <SectionHome />
-          <SectionAbout />
-          <SectionSkills />
-          <SectionExperience />
-          <SectionContact />
-        </motion.div>
-      ) : (
-        <LoadingAnimation onDone={() => setIsAnimationDone(true)} />
+      {!isAnimationComplete && (
+        <div style={{ position: "absolute", zIndex: 10, overflowY: "none" }}>
+          <LoadingAnimation onDone={() => setIsAnimationComplete(true)} />
+        </div>
       )}
+
+      <motion.div
+        variants={boxVariants}
+        initial='hidden'
+        animate='visible'
+        style={{ zIndex: isAnimationComplete ? 1 : -1 }}
+      >
+        <Header />
+        <HeaderIcons />
+        <HeaderMail />
+        <HeaderMobile />
+        <SectionHome />
+        <SectionAbout />
+        <SectionSkills />
+        <SectionExperience />
+        <SectionContact />
+      </motion.div>
     </div>
   );
 };

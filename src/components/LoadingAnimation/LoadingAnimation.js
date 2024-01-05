@@ -69,7 +69,7 @@ const LoadingAnimation = ({ onDone }) => {
       variants={pageAnimation}
       initial={"hidden"}
       animate={"visible"}
-      className='overflow-hidden '
+      className='overflow-none '
     >
       <div className=' h-screen w-screen bg-black'>
         <div className='relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>

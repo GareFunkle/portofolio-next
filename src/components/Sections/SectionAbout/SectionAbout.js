@@ -43,10 +43,10 @@ const SectionAbout = () => {
           <Box variants={boxVariants}>
             <Image
               src='/images/vincent-durret.webp'
-              width={1920}
-              height={1080}
+              width={657.5}
+              height={778.55}
               className=' float-right mb-6 h-full w-full rounded-3xl p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]  sm:w-2/3 md:w-1/2  lg:w-1/2'
-              alt="Vincent Durret's image"
+              alt='Vincent Durret photo de face'
             />
           </Box>
           <Box variants={boxVariants}>
