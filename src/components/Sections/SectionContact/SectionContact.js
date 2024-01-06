@@ -33,6 +33,7 @@ const SectionContact = () => {
             target='_blank'
             rel='noreferrer'
             className='p-4'
+            aria-label='Linkedin'
           >
             <FontAwesomeIcon
               icon={faLinkedinIn}
@@ -44,6 +45,7 @@ const SectionContact = () => {
             target='_blank'
             rel='noreferrer'
             className='p-4'
+            aria-label='Github'
           >
             <FontAwesomeIcon
               icon={faGithub}

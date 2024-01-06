@@ -9,11 +9,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 const linksItems = [
-  { name: "Accueil", icon: faHome, link: "/" },
-  { name: "À propos", icon: faUser, link: "#a-propos" },
-  { name: "Compétences", icon: faDumbbell, link: "#competences" },
-  { name: "Experiences", icon: faBriefcase, link: "#experiences" },
-  { name: "Contact", icon: faEnvelope, link: "#contact" },
+  { name: "Accueil", icon: faHome, link: "/", aria: "Accueil" },
+  { name: "À propos", icon: faUser, link: "#a-propos", aria: "À propos" },
+  {
+    name: "Compétences",
+    icon: faDumbbell,
+    link: "#competences",
+    aria: "Compétences",
+  },
+  {
+    name: "Experiences",
+    icon: faBriefcase,
+    link: "#experiences",
+    aria: "Experiences",
+  },
+  { name: "Contact", icon: faEnvelope, link: "#contact", aria: "Contact" },
 ];
 
 const HeaderMobile = () => {
@@ -26,11 +36,11 @@ const HeaderMobile = () => {
               <Link
                 href={item.link}
                 key={item.name}
+                aria-label={item.aria}
                 className='border border-transparent p-2 transition-all duration-300 hover:rounded-lg hover:border hover:border-white'
               >
                 <FontAwesomeIcon icon={item.icon} className='block w-8' />{" "}
                 <span className='hidden'>{item.name}</span>{" "}
-                {/* Cacher le texte */}
               </Link>
             ))}
           </div>
