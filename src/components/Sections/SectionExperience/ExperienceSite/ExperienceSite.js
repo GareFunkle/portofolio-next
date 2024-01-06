@@ -63,7 +63,7 @@ const ExperienceSite = (props) => {
                 height={1080}
                 src={props.selectedItem.imgSite}
                 alt={props.selectedItem.altTwo}
-                priority
+                loading='lazy'
                 className='rounded-lg '
               />
             </div>

@@ -79,9 +79,9 @@ const ExperienceItems = (props) => {
             height={500}
             className='h-11/12 w-full cursor-pointer rounded-lg object-cover transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]  active:scale-95 '
             src={item.src}
-            priority
             alt={item.altOne}
             onClick={() => handleClick(item)}
+            loading='lazy'
           />
 
           <h2 className='mt-4 text-p font-semibold  text-white'>{item.name}</h2>
