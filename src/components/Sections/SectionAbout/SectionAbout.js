@@ -6,7 +6,7 @@ import { wrap } from "gsap";
 
 const boxVariants = {
   hidden: { y: 100, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
 };
 
 const wrapperVariants = {

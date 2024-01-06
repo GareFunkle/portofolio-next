@@ -1,22 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-
-import Header from "@/components/Header/Header";
-import SectionContact from "@/components/Sections/SectionContact/SectionContact";
-import SectionExperience from "@/components/Sections/SectionExperience/SectionExperience";
-import SectionHome from "@/components/Sections/SectionHome/SectionHome";
-import SectionSkills from "@/components/Sections/SectionSkills/SectionSkills";
-import SectionAbout from "@/components/Sections/SectionAbout/SectionAbout";
-import HeaderMobile from "@/components/Header/HeaderMobile/HeaderMobile";
-import HeaderIcons from "@/components/Header/HeaderIcon/HeaderIcons";
 import LoadingAnimation from "@/components/LoadingAnimation/LoadingAnimation";
+import Sections from "@/components/Sections/Sections";
 import { motion } from "framer-motion";
-import HeaderMail from "@/components/Header/HeaderMail/HeaderMail";
 
 const boxVariants = {
   hidden: {
-    opacity: 0,
+    opacity: 0.1,
   },
   visible: {
     opacity: 1,
@@ -32,10 +23,8 @@ const Home = () => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   useEffect(() => {
     if (!isAnimationComplete) {
-      // Désactiver le défilement
       document.body.style.overflow = "hidden";
     } else {
-      // Réactiver le défilement
       document.body.style.overflow = "";
     }
   }, [isAnimationComplete]);
@@ -43,7 +32,7 @@ const Home = () => {
   return (
     <div>
       {!isAnimationComplete && (
-        <div style={{ position: "absolute", zIndex: 10, overflowY: "none" }}>
+        <div style={{ position: "absolute", zIndex: 10 }}>
           <LoadingAnimation onDone={() => setIsAnimationComplete(true)} />
         </div>
       )}
@@ -54,15 +43,7 @@ const Home = () => {
         animate='visible'
         style={{ zIndex: isAnimationComplete ? 1 : -1 }}
       >
-        <Header />
-        <HeaderIcons />
-        <HeaderMail />
-        <HeaderMobile />
-        <SectionHome />
-        <SectionAbout />
-        <SectionSkills />
-        <SectionExperience />
-        <SectionContact />
+        <Sections />
       </motion.div>
     </div>
   );

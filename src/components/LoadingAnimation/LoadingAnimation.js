@@ -5,7 +5,7 @@ import VDLogo from "../../../public/images/logo/vd.svg";
 
 const logoAnimation = {
   hidden: {
-    opacity: 0,
+    opacity: 0.1,
     x: -1000,
     rotate: -360,
   },
@@ -54,7 +54,7 @@ const secondTextAnimation = {
 const pageAnimation = {
   hidden: { opacity: 1 },
   visible: {
-    opacity: 0,
+    opacity: 0.2,
     transition: {
       delay: 2, // Ajustez ce délai pour qu'il corresponde à la fin de l'animation du logo
       duration: 0.3,
