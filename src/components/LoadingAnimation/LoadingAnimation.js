@@ -54,9 +54,9 @@ const secondTextAnimation = {
 const pageAnimation = {
   hidden: { opacity: 1 },
   visible: {
-    opacity: 0.2,
+    opacity: 0,
     transition: {
-      delay: 2, // Ajustez ce délai pour qu'il corresponde à la fin de l'animation du logo
+      delay: 2,
       duration: 0.3,
       ease: "easeInOut",
     },

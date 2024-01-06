@@ -1,11 +1,11 @@
 import React from "react";
 import VDLogo from "../../../../public/images/logo/vd.svg";
-import HomeVideo from "@/components/Sections/SectionHome/HomeVideo/HomeVideo";
+import BannerVideo from "@/components/Sections/SectionBanner/BannerVideo/BannerVideo";
 
 const SectionHome = () => {
   return (
     <div id='#' className=' h-screen w-full  '>
-      <HomeVideo />
+      <BannerVideo />
       <div className='z-2 relative left-1/2  top-1/2  -translate-x-1/2 -translate-y-1/2 overflow-hidden'>
         <div className='flex  items-center justify-center '>
           <VDLogo

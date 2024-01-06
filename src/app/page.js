@@ -1,50 +1,38 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import LoadingAnimation from "@/components/LoadingAnimation/LoadingAnimation";
 import Sections from "@/components/Sections/Sections";
 import { motion } from "framer-motion";
 
 const boxVariants = {
   hidden: {
-    opacity: 0.1,
+    opacity: 0.2,
   },
   visible: {
     opacity: 1,
     transition: {
-      delay: 2,
-      duration: 2,
+      duration: 1,
       ease: "easeInOut",
     },
   },
 };
 
 const Home = () => {
-  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
-  useEffect(() => {
-    if (!isAnimationComplete) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-  }, [isAnimationComplete]);
-
+  const [isAnimationDone, setIsAnimationDone] = useState(false);
   return (
     <div>
-      {!isAnimationComplete && (
-        <div style={{ position: "absolute", zIndex: 10 }}>
-          <LoadingAnimation onDone={() => setIsAnimationComplete(true)} />
-        </div>
+      {isAnimationDone ? (
+        <motion.div
+          variants={boxVariants}
+          initial={"hidden"}
+          animate={"visible"}
+        >
+          <Sections />
+        </motion.div>
+      ) : (
+        <LoadingAnimation onDone={() => setIsAnimationDone(true)} />
       )}
-
-      <motion.div
-        variants={boxVariants}
-        initial='hidden'
-        animate='visible'
-        style={{ zIndex: isAnimationComplete ? 1 : -1 }}
-      >
-        <Sections />
-      </motion.div>
     </div>
   );
 };

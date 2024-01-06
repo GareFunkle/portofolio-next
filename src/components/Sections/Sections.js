@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import HeaderMobile from "../Header/HeaderMobile/HeaderMobile";
-import SectionHome from "./SectionHome/SectionHome";
+import SectionBanner from "./SectionBanner/SectionBanner";
 import SectionAbout from "./SectionAbout/SectionAbout";
 import SectionSkills from "./SectionSkills/SectionSkills";
 import SectionExperience from "./SectionExperience/SectionExperience";
@@ -11,7 +11,7 @@ const Sections = () => {
   return (
     <div>
       <Header />
-      <SectionHome />
+      <SectionBanner />
       <SectionAbout />
       <SectionSkills />
       <SectionExperience />
