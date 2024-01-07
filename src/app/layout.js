@@ -12,6 +12,10 @@ export const metadata = {
   title: "Vincent Durret Portfolio",
   description:
     "Découvrez mes créations de sites web, vitrine et e-commerce, qui illustrent ma passion et mon expertise en développement web. Contactez-moi pour concrétiser votre projet en réalité.",
+  keywords: ["portfolio", "developpeur web", "cv", "freelance"],
+  openGraph: {
+    images: "/images/logo/vd.jpg",
+  },
 };
 
 const RootLayout = ({ children }) => {
