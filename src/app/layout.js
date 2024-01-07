@@ -1,6 +1,12 @@
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import { Trispace } from "next/font/google";
+
+const trispace = Trispace({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Vincent Durret Portfolio",
@@ -10,7 +16,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang='fr'>
+    <html lang='fr' className={trispace.className}>
       <body>
         {children}
         <SpeedInsights />
