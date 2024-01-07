@@ -17,7 +17,7 @@ export const metadata = {
     title: "Vincent Durret Portfolio",
     description:
       "Découvrez mes créations de sites web, vitrine et e-commerce, qui illustrent ma passion et mon expertise en développement web.",
-    url: "https://votre-site-web.com",
+    url: "https://vincent-durret.vercel.app/",
     siteName: "Vincent Durret Portfolio",
     images: [
       {
