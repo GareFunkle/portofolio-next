@@ -11,6 +11,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='fr'>
       <body>{children}</body>
+      <SpeedInsights />
     </html>
   );
 };
