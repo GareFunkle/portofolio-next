@@ -22,8 +22,8 @@ export const metadata = {
     images: [
       {
         url: "/images/logo/vd.jpg",
-        width: 500,
-        height: 500,
+        width: 1200,
+        height: 650,
         alt: "Logo Vincent Durret",
       },
     ],
