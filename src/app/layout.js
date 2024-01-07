@@ -10,8 +10,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='fr'>
-      <body>{children}</body>
-      <SpeedInsights />
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 };
