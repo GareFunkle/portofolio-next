@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Vincent Durret Portfolio",
     images: [
       {
-        url: "/images/logo/vd.jpg",
+        url: "./vd.jpg",
         width: 500,
         height: 500,
         alt: "Logo Vincent Durret",
