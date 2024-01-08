@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Vincent Durret Portfolio",
     images: [
       {
-        url: "/images/logo/vincent-durret-graph.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Logo Vincent Durret",
