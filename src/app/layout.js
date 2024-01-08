@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Vincent Durret Portfolio",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "https://vincent-durret.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Logo Vincent Durret",
