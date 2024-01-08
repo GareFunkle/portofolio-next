@@ -51,6 +51,7 @@ const RootLayout = ({ children }) => {
         {metadata.openGraph.images.map((image, index) => (
           <>
             <meta property='og:image' content={image.url} />
+            <meta property='og:image:type' content='image/jpeg' />
             <meta property='og:image:width' content={image.width.toString()} />
             <meta
               property='og:image:height'
