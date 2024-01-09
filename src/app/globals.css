@@ -144,3 +144,9 @@ html {
 .hover-text-javascript:hover {
   color: #f0db4f;
 }
+
+
+.vertical-text {
+  -webkit-writing-mode: vertical-lr; /* Préfixe pour Safari */
+  writing-mode: vertical-lr; /* Standard */
+}

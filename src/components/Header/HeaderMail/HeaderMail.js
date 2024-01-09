@@ -31,7 +31,7 @@ const HeaderMail = () => {
           <div className=''>
             <Link
               href='mailto:vincent.durret@gmail.com?subject=Site Web'
-              className=' text-base text-white transition-all duration-300 [writing-mode:vertical-lr] hover:-translate-y-1'
+              className=' vertical-text text-base text-white transition-all duration-300 hover:-translate-y-1'
             >
               vincent.durret@gmail.com
             </Link>
