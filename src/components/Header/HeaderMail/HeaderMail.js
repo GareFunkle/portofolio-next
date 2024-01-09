@@ -27,11 +27,11 @@ const HeaderMail = () => {
       className='fixed bottom-0 right-12 z-30 hidden md:block'
     >
       <div className='rounded-t-lg bg-white/20  backdrop-blur-lg '>
-        <div className='flex flex-col items-center justify-center  space-y-6 px-2 pt-4  '>
-          <div className=''>
+        <div className='flex flex-col items-center justify-center space-y-6  pl-6 pr-6 pt-4  '>
+          <div>
             <Link
               href='mailto:vincent.durret@gmail.com?subject=Site Web'
-              className=' vertical-text text-base text-white transition-all duration-300 hover:-translate-y-1'
+              className=' vertical-text text-base leading-[0.1rem] text-white transition-all duration-300 hover:-translate-y-1'
             >
               vincent.durret@gmail.com
             </Link>
