@@ -27,8 +27,12 @@ export const metadata = {
     title: "Vincent Durret Portfolio",
     description:
       "Découvrez mes créations de sites web, vitrine et e-commerce, qui illustrent ma passion et mon expertise en développement web. Contactez-moi pour concrétiser votre projet en réalité.",
+    url: "https://vincent-durret.vercel.app/",
+    siteName: "Vincent Durret Portfolio",
     image: "./opengraph-image.png",
   },
+  locale: "fr_FR",
+  type: "website",
 };
 
 const RootLayout = ({ children }) => {
