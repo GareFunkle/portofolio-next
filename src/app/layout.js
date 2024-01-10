@@ -9,10 +9,26 @@ const trispace = Trispace({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://vincent-durret.vercel.app/"),
   title: "Vincent Durret Portfolio",
   description:
     "Découvrez mes créations de sites web, vitrine et e-commerce, qui illustrent ma passion et mon expertise en développement web. Contactez-moi pour concrétiser votre projet en réalité.",
-  keywords: ["portfolio", "developpeur web", "cv", "freelance"],
+  keywords: [
+    "portfolio",
+    "developpeur web",
+    "cv",
+    "freelance",
+    "vincent",
+    "durret",
+    "react",
+    "next.js",
+  ],
+  openGraph: {
+    title: "Vincent Durret Portfolio",
+    description:
+      "Découvrez mes créations de sites web, vitrine et e-commerce, qui illustrent ma passion et mon expertise en développement web. Contactez-moi pour concrétiser votre projet en réalité.",
+    image: "./opengraph-image.png",
+  },
 };
 
 const RootLayout = ({ children }) => {
